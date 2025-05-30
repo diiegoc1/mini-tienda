@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-banner">
+        <div class="header-banner">
+            <p><strong><span>¡Tienda especializada en productos de calidad + envío a todo el pais!</span></strong></p>
+        </div>
+    </div>
+    <header>
+        <div class="banner">
+            <div>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-item">Catálogo</a>
+                    <a href="#" class="nav-item">Ofertas</a>
+                    <a href="#" class="nav-item">Novedades</a>
+                    <a href="#" class="nav-item">Contacto</a>
+                </nav>
+            </div>
+            <div class="contenedor-carrito">
+                <div class="carrito-dropdown">
+                    <button class="dropdown-btn">
+                        <box-icon name='cart' type='solid' color='#ffffff'></box-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="cart">
+                            <h2>Carrito de compras</h2>
+
+                            <ul id="cart-list">
+                            </ul>
+                            <p>Total: $<span id="total">0</span></p>
+                            <button id="finalizar-compra" class="finalizar-btn">Finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Swiper -->
+        <div class="contenedor-slide">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="src/slide/1.jpg" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="src/slide/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/slide/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="src/slide/4.png" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span>HOLA</span>
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <h1>Productos destacados</h1>
+            <div id="myDropdown" class="container">
+                <div class="products">
+                    <div class="product">
+                        <img src="src/mouse/Mouse Gravastar Mercury.webp"
+                            data-hover="src/mouse/Mouse Gravastar Mercury2.webp" alt="">
+                        <h2>Mouse Gravastar Mercury X-Pro Interestellar Silver</h2>
+                        <p>Precio: $199.499,00</p>
+                        <button class="add-to-cart" data-name="Mouse Gravastar Mercury X-Pro Interestellar Silver"
+                            data-price="199.499">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/teclado/Teclado iYX1.png" data-hover="src/teclado/Teclado iYX2.png" alt="">
+                        <h2>Teclado iYX MU68 PRO Switch Magnético - White / Black</h2>
+                        <p>Precio: $195.999,00</p>
+                        <button class="add-to-cart" data-name="Teclado iYX MU68 PRO Switch Magnético - White / Black"
+                            data-price="195.999">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/mouse/Mouse Attack Shark.webp" data-hover="src/mouse/Mouse Attack Shark2.webp"
+                            alt="">
+                        <h2>Mouse Attack Shark X6 Inalámbrico Tri Mode 26000 dpi Paw3395 + Dock</h2>
+                        <p>Precio: $65.549,00</p>
+                        <button class="add-to-cart"
+                            data-name="Mouse Attack Shark X6 Inalámbrico Tri Mode 26000 dpi Paw3395 + Dock"
+                            data-price="65.549">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/mousepad/Mouse Pad Steelseries.png"
+                            data-hover="src/mousepad/Mouse Pad Steelseries2.png" alt="">
+                        <h2>Mouse Pad Steelseries Qck L Negro</h2>
+                        <p>Precio: $52.249,00</p>
+                        <button class="add-to-cart" data-name="Mouse Pad Steelseries Qck L Negro"
+                            data-price="52.249">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/teclado/Teclado Attack Shark K86 Inalámbrico Gamer Retro Lavender Blue.png"
+                            data-hover="src/teclado/Teclado Attack Shark K86 Inalámbrico Gamer Retro Lavender Blue2.png"
+                            alt="">
+                        <h2>Teclado Attack Shark K86 Inalámbrico Gamer Retro Lavender Blue</h2>
+                        <p>Precio: $123.499,00</p>
+                        <button class="add-to-cart"
+                            data-name="Teclado Attack Shark K86 Inalámbrico Gamer Retro Lavender Blue"
+                            data-price="123.499">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/teclado/Teclado Inalámbrico Skyloong Gk104 Pro Twilight.png"
+                            data-hover="src/teclado/Teclado Inalámbrico Skyloong Gk104 Pro Twilight2.png" alt="">
+                        <h2>Teclado Inalámbrico Skyloong Gk104 Pro Twilight 2 Pantallas</h2>
+                        <p>Precio: $224.199,00</p>
+                        <button class="add-to-cart"
+                            data-name="Teclado Inalámbrico Skyloong Gk104 Pro Twilight 2 Pantallas"
+                            data-price="224.199">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/teclado/ATTACK SHARK KEYBOARD X66 STARRY BLACK - LINEAR STRAWBERRY SWITCH.png"
+                            data-hover="src/teclado/ATTACK SHARK KEYBOARD X66 STARRY BLACK - LINEAR STRAWBERRY SWITCH2.png"
+                            alt="">
+                        <h2>ATTACK SHARK KEYBOARD X66 STARRY BLACK - LINEAR STRAWBERRY SWITCH</h2>
+                        <p>Precio: $94.999,00</p>
+                        <button class="add-to-cart"
+                            data-name="ATTACK SHARK KEYBOARD X66 STARRY BLACK - LINEAR STRAWBERRY SWITCH"
+                            data-price="94.999">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/mouse/Mouse Attack Shark R5 ULTRA.png"
+                            data-hover="src/mouse/Mouse Attack Shark R5 ULTRA2.png" alt="">
+                        <h2>Mouse Attack Shark R5 ULTRA</h2>
+                        <p>Precio: $119.999,00</p>
+                        <button class="add-to-cart" data-name="Mouse Attack Shark R5 ULTRA"
+                            data-price="119.999">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/mouse/Mouse Lamzu - Maya X Aimlabs Edition.png"
+                            data-hover="src/mouse/Mouse Lamzu - Maya X Aimlabs Edition2.png" alt="">
+                        <h2>Mouse Lamzu - Maya X Aimlabs Edition</h2>
+                        <p>Precio: $159.999,00</p>
+                        <button class="add-to-cart" data-name="Mouse Lamzu - Maya X Aimlabs Edition"
+                            data-price="159.999">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/mouse/Mouse GravaStar Mercury M2 Stealth Black.png"
+                            data-hover="src/mouse/Mouse GravaStar Mercury M2 Stealth Black2.png" alt="">
+                        <h2>Mouse GravaStar Mercury M2 Stealth Black</h2>
+                        <p>Precio: $113.999,00</p>
+                        <button class="add-to-cart" data-name="Mouse GravaStar Mercury M2 Stealth Black"
+                            data-price="113.999">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/simulador/Simulador Next Level Gt Lite Junior.jpg"
+                            data-hover="src/simulador/Simulador Next Level Gt Lite Junior2.jpg" alt="">
+                        <h2>Simulador Next Level Gt Lite Junior</h2>
+                        <p>Precio: $415.529,88</p>
+                        <button class="add-to-cart" data-name="Simulador Next Level Gt Lite Junior"
+                            data-price="415.529,88">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/monitor/Monitor Asus 27 Va27ehe Ips Fhd 75hz.jpg"
+                            data-hover="src/monitor/Monitor Asus 27 Va27ehe Ips Fhd 75hz2.jpg" alt="">
+                        <h2>Monitor Asus 27" Va27ehe Ips Fhd 75hz</h2>
+                        <p>Precio: $277.318,75</p>
+                        <button class="add-to-cart" data-name="Monitor Asus 27 Va27ehe Ips Fhd 75hz"
+                            data-price="415.529,75">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/notebook/Notebook Exo Ryzen 3 3200U Clever 8Gb Ssd 480Gb 15.6.jpeg"
+                            data-hover="src/notebook/Notebook Exo Ryzen 3 3200U Clever 8Gb Ssd 480Gb 15.62.jpeg" alt="">
+                        <h2>Notebook Exo Ryzen 3 3200U Clever 8Gb Ssd 480Gb 15.6"</h2>
+                        <p>Precio: $412.529</p>
+                        <button class="add-to-cart" data-name="Notebook Exo Ryzen 3 3200U Clever 8Gb Ssd 480Gb 15.6""
+                            data-price=" 412.529">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/notebook/NOTEBOOK Asus Gamer A16 Tuf Ryzen 7 7735HS 16Gb Ssd 512Gb RX7700S 15.6.jpeg"
+                            data-hover="src/notebook/NOTEBOOK Asus Gamer A16 Tuf Ryzen 7 7735HS 16Gb Ssd 512Gb RX7700S 15.62.jpeg"
+                            alt="">
+                        <h2>NOTEBOOK Asus Gamer A16 Tuf Ryzen 7 7735HS 16Gb Ssd 512Gb RX7700S 15.6"</h2>
+                        <p>Precio: $1.697.269</p>
+                        <button class="add-to-cart"
+                            data-name="NOTEBOOK Asus Gamer A16 Tuf Ryzen 7 7735HS 16Gb Ssd 512Gb RX7700S 15.6"
+                            data-price="1.697.269">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/monitor/Monitor Lenovo E22-30 21,5 Hdmi Dp Vga.jpg"
+                            data-hover="src/monitor/Monitor Lenovo E22-30 21,5 Hdmi Dp Vga2.jpg" alt="">
+                        <h2>Monitor Lenovo E22-30 21,5" Hdmi Dp Vga</h2>
+                        <p>Precio: $264.348,58</p>
+                        <button class="add-to-cart" data-name="Monitor Lenovo E22-30 21,5 Hdmi Dp Vga"
+                            data-price="264.348,58">Seleccionar</button>
+                    </div>
+                    <div class="product">
+                        <img src="src/auriculares/Auricular Inalámbrico Gamer Logitech A50 X.jpeg"
+                            data-hover="src/auriculares/Auricular Inalámbrico Gamer Logitech A50 X2.jpeg" alt="">
+                        <h2>Auricular Inalámbrico Gamer Logitech A50 X</h2>
+                        <p>Precio: $627.339</p>
+                        <button class="add-to-cart" data-name="Auricular Inalámbrico Gamer Logitech A50 X"
+                            data-price="627.339">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class='bx bx-map'></i> Av. Siempreviva 742, Buenos Aires</li>
+                    <li><i class='bx bx-phone'></i> +54 11 1234-5678</li>
+                    <li><i class='bx bx-envelope'></i> contacto@tiendatech.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="#"><box-icon type='logo' name='facebook'></box-icon></a>
+                    <a href="#"><box-icon type='logo' name='instagram'></box-icon></a>
+                    <a href="#"><box-icon type='logo' name='twitter'></box-icon></a>
+                    <a href="#"><box-icon type='logo' name='whatsapp'></box-icon></a>
+                </div>
+                <div class="payment-methods">
+                    <box-icon name='visa' type='logo'></box-icon>
+                    <box-icon name='mastercard' type='logo'></box-icon>
+                    <box-icon name='paypal' type='logo'></box-icon>
+                    <box-icon name='bitcoin' type='logo'></box-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 TiendaTech - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>
